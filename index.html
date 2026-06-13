@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Het Chaudhari — Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Playfair Display', 'ui-serif', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-slate-800 antialiased">
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+    <nav class="max-w-5xl mx-auto px-6 py-5 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <a href="#top" class="flex items-center gap-2 font-bold text-lg text-slate-900">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Het Chaudhari
+        </a>
+        <a href="https://drive.google.com/file/d/18rpfYG9HRdYPVKU33PWlBetETvmmzHt3/view?usp=drive_link" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg border-2 border-amber-600 text-amber-600 text-xs font-medium hover:bg-amber-50 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Resume
+        </a>
+      </div>
+      <div class="hidden md:flex items-center gap-6 text-base text-slate-700">
+        <a href="#about" class="hover:text-amber-600 transition-colors">About</a>
+        <a href="#experience" class="hover:text-amber-600 transition-colors">Experience</a>
+        <a href="#projects" class="hover:text-amber-600 transition-colors">Projects</a>
+        <a href="#skills" class="hover:text-amber-600 transition-colors">Skills</a>
+        <a href="#contact" class="hover:text-amber-600 transition-colors">Contact</a>
+        <a href="#hire-me" class="hover:text-amber-600 transition-colors">Hire Me</a>
+      </div>
+      <a href="#contact" class="md:hidden text-sm font-medium text-amber-600">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top" class="max-w-5xl mx-auto px-6">
+
+    <!-- Hero -->
+    <section id="hero" class="py-16 sm:py-24 grid md:grid-cols-2 gap-12 items-center">
+      <div class="rounded-2xl overflow-hidden bg-slate-100 aspect-square flex items-center justify-center order-1 md:order-none">
+        <img src="photo.jpeg" alt="Het Chaudhari" class="w-full h-full object-cover" />
+      </div>
+
+      <div>
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <h1 class="font-serif text-4xl sm:text-6xl font-bold text-slate-900">Het Chaudhari</h1>
+        </div>
+        <p class="mt-3 text-sm text-slate-500">📍 Mehsana, Gujarat &middot; 🌐 English, Gujarati, Hindi</p>
+
+        <h2 class="mt-6 font-serif text-2xl sm:text-3xl font-bold text-amber-600">Software Engineer</h2>
+
+        <p class="mt-6 text-slate-600 leading-relaxed">
+          I'm a software developer who loves solving different kinds of problems — from building
+          full-stack web apps to optimizing backend systems. I'm also really into AI and enjoy
+          exploring how it can be used to build smarter, more useful products.
+        </p>
+
+        <div class="mt-8 flex flex-wrap items-center gap-4">
+          <a href="#experience" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-amber-600 text-white font-medium hover:bg-amber-700 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            View Experience
+          </a>
+          <a href="#about" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border-2 border-amber-600 text-amber-600 font-medium hover:bg-amber-50 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            About Me
+          </a>
+          <a href="https://www.linkedin.com/in/chaudhari-het-o7/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-slate-300 text-slate-700 font-medium hover:border-amber-600 hover:text-amber-600 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+            Connect on LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="w-screen ml-[calc(50%-50vw)] mr-[calc(50%-50vw)] bg-slate-50 border-t border-slate-200 py-16 sm:py-24">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="font-serif text-3xl font-bold text-slate-900 mb-8">About</h2>
+        <p class="max-w-3xl text-slate-600 leading-relaxed">
+          I'm currently pursuing my B.Tech in Electronics &amp; Communication Engineering at Sardar
+          Vallabhbhai National Institute of Technology (SVNIT), Surat (2022–2026). I like solving
+          DSA problems, building things end-to-end as a developer, and exploring AI and how it can
+          be applied to real products. I'm always looking for new problems to solve and new things
+          to learn and build.
+        </p>
+
+        <div class="mt-8 max-w-3xl space-y-4">
+          <div class="bg-amber-100 border-l-4 border-amber-600 rounded-r-lg p-6">
+            <p class="font-semibold text-amber-800">🏆 HackOn with Amazon – Season 5</p>
+            <p class="mt-2 text-amber-700 leading-relaxed">
+              Reached the final round — cleared the initial online coding rounds among thousands of
+              participants and presented our project to Amazon judges.
+            </p>
+          </div>
+
+          <div class="bg-amber-100 border-l-4 border-amber-600 rounded-r-lg p-6">
+            <p class="font-semibold text-amber-800">🧩 1000+ DSA Problems Solved</p>
+            <p class="mt-2 text-amber-700 leading-relaxed">
+              Solved 1000+ data structures and algorithms problems across LeetCode, Codeforces,
+              GeeksforGeeks, CodeChef, and CodingNinjas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="py-16 border-t border-slate-200">
+      <h2 class="font-serif text-3xl font-bold text-slate-900 mb-8">Experience</h2>
+
+      <div class="space-y-10">
+        <div class="bg-slate-50 border-l-4 border-amber-600 rounded-2xl p-6 sm:p-8">
+          <div class="flex flex-wrap items-center gap-3">
+            <h3 class="font-serif text-2xl font-bold text-slate-900">Nova9.ai</h3>
+            <span class="px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-sm font-medium">1+ year</span>
+          </div>
+          <p class="mt-1 text-sm text-slate-500">Software Developer — Jan 2026 &ndash; May 2026 &middot; Bengaluru, Karnataka</p>
+
+          <p class="mt-4 text-slate-600 leading-relaxed">
+            Built production-grade quick-commerce analytics dashboards using React/Next.js, Django,
+            PostgreSQL, and Material UI to help brands monitor inventory, purchase orders, fill
+            rate, and keyword rankings across Blinkit, Zepto, and Instamart.
+          </p>
+
+          <div class="mt-6 space-y-6">
+            <div>
+              <h4 class="font-serif text-lg font-bold text-slate-900 mb-2">Supply-Chain <span class="font-sans">&amp;</span> Analytics Modules</h4>
+              <ul class="list-disc list-inside space-y-1.5 text-slate-600 text-sm leading-relaxed">
+                <li>Developed intelligent supply-chain modules for PO prioritization, stock-transfer detection, DOI tracking, and surplus inventory management using optimized SQL queries, CTEs, window functions, and 15-day historical sales analysis.</li>
+                <li>Wrote and improved complex SQL queries using PostgreSQL read replicas, raw SQL, and multi-level CTEs to efficiently process large-scale inventory and sales datasets for real-time dashboard performance.</li>
+                <li>Built and integrated an AI agent to assist brand managers with quick inventory and sales insights directly within the dashboard.</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-serif text-lg font-bold text-slate-900 mb-2">Interactive Dashboards</h4>
+              <ul class="list-disc list-inside space-y-1.5 text-slate-600 text-sm leading-relaxed">
+                <li>Designed interactive data workflows with drill-down dashboards, vendor and platform filters, period-over-period analytics, and Excel export functionality, reducing manual spreadsheet-based operational analysis for brand managers.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-16 border-t border-slate-200">
+      <h2 class="font-serif text-3xl font-bold text-slate-900 mb-8">Projects</h2>
+
+      <div class="grid sm:grid-cols-2 gap-8">
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 flex flex-col">
+          <h3 class="font-serif text-xl font-bold text-slate-900">SVNIT Student Resume Builder</h3>
+          <p class="mt-3 text-slate-600 leading-relaxed text-sm flex-grow">
+            A web app that helps SVNIT students create clean, professional resumes by filling out
+            guided forms for education, projects, skills, and achievements, then generating a
+            ready-to-export resume layout.
+          </p>
+          <div class="mt-4 flex items-center gap-4">
+            <a href="https://github.com/Het-Chaudhari/resumeBuilder" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-amber-600 font-medium hover:text-amber-700 transition-colors text-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.94 0-1.305.465-2.385 1.23-3.225-.12-.3-.535-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.655 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.62-2.805 5.64-5.475 5.94.435.375.81 1.11.81 2.25 0 1.635-.015 2.94-.015 3.345 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              View on GitHub
+            </a>
+            <a href="https://svnit.make-it.ro/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-amber-600 font-medium hover:text-amber-700 transition-colors text-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Visit Website
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 flex flex-col">
+          <h3 class="font-serif text-xl font-bold text-slate-900">Automated IRCTC Booker</h3>
+          <p class="mt-3 text-slate-600 leading-relaxed text-sm flex-grow">
+            An automation tool that streamlines the IRCTC train ticket booking process by
+            auto-filling passenger details and form fields to book tickets quickly during the
+            booking window.
+          </p>
+          <a href="https://github.com/Het-Chaudhari/HIRCTC" target="_blank" rel="noopener" class="mt-4 inline-flex items-center gap-2 text-amber-600 font-medium hover:text-amber-700 transition-colors text-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.94 0-1.305.465-2.385 1.23-3.225-.12-.3-.535-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.655 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.62-2.805 5.64-5.475 5.94.435.375.81 1.11.81 2.25 0 1.635-.015 2.94-.015 3.345 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            View on GitHub
+          </a>
+        </div>
+
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 flex flex-col sm:col-span-2">
+          <h3 class="font-serif text-xl font-bold text-slate-900">Food Delivery Web App</h3>
+          <p class="mt-3 text-slate-600 leading-relaxed text-sm flex-grow">
+            A full-stack food delivery platform with browsing, cart, and order management for
+            customers, plus restaurant and menu management on the backend — built end-to-end
+            covering authentication, database design, and a responsive UI.
+          </p>
+          <a href="https://github.com/Het-Chaudhari/food_dilevery" target="_blank" rel="noopener" class="mt-4 inline-flex items-center gap-2 text-amber-600 font-medium hover:text-amber-700 transition-colors text-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.94 0-1.305.465-2.385 1.23-3.225-.12-.3-.535-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.655 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.62-2.805 5.64-5.475 5.94.435.375.81 1.11.81 2.25 0 1.635-.015 2.94-.015 3.345 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            View on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-16 border-t border-slate-200">
+      <h2 class="flex items-center gap-3 font-serif text-3xl font-bold text-slate-900 mb-8">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        Skills
+      </h2>
+
+      <div class="grid sm:grid-cols-2 gap-x-12 gap-y-10">
+        <div>
+          <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">Frontend <span class="font-sans">&amp;</span> Web</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm">React</span>
+            <span class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm">Next.js</span>
+            <span class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm">JavaScript</span>
+            <span class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm">HTML &amp; CSS</span>
+            <span class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm">Tailwind CSS</span>
+            <span class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm">Material UI</span>
+          </div>
+        </div>
+        <div>
+          <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">Backend</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm">Django</span>
+            <span class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm">Node.js</span>
+            <span class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm">Express</span>
+            <span class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm">REST APIs</span>
+            <span class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm">JWT Auth</span>
+            <span class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm">OOPS</span>
+          </div>
+        </div>
+        <div>
+          <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">Database</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm">PostgreSQL</span>
+            <span class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm">MongoDB</span>
+          </div>
+        </div>
+        <div>
+          <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">DevOps <span class="font-sans">&amp;</span> Tools</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm">Git</span>
+            <span class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm">GitHub</span>
+            <span class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm">Playwright</span>
+          </div>
+        </div>
+        <div>
+          <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">Data <span class="font-sans">&amp;</span> AI</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm">SQL</span>
+            <span class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm">Generative AI</span>
+          </div>
+        </div>
+        <div>
+          <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">Languages</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm">English</span>
+            <span class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm">Gujarati</span>
+            <span class="px-4 py-2 rounded-full bg-slate-100 text-slate-700 text-sm">Hindi</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 border-t border-slate-200 text-center">
+      <h2 class="font-serif text-3xl font-bold text-slate-900 mb-4">Contact</h2>
+      <p class="text-slate-600 mb-6">Feel free to reach out — I'm happy to connect.</p>
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a href="mailto:hetc1639@gmail.com" class="px-5 py-2.5 rounded-lg bg-amber-600 text-white font-medium hover:bg-amber-700 transition-colors">Email Me</a>
+        <a href="https://www.linkedin.com/in/chaudhari-het-o7/" target="_blank" rel="noopener" class="px-5 py-2.5 rounded-lg border border-slate-300 text-slate-700 font-medium hover:border-amber-600 hover:text-amber-600 transition-colors">LinkedIn</a>
+        <a href="https://github.com/Het-Chaudhari" target="_blank" rel="noopener" class="px-5 py-2.5 rounded-lg border border-slate-300 text-slate-700 font-medium hover:border-amber-600 hover:text-amber-600 transition-colors">GitHub</a>
+      </div>
+    </section>
+
+    <!-- Hire Me -->
+    <section id="hire-me" class="py-16 border-t border-slate-200">
+      <h2 class="font-serif text-3xl font-bold text-slate-900 mb-4 text-center">Hire Me</h2>
+      <p class="text-slate-600 mb-8 text-center">Have a project in mind? Send me a message and I'll get back to you.</p>
+
+      <form id="hire-me-form" class="max-w-md mx-auto space-y-4">
+        <div>
+          <label for="hire-name" class="block text-sm font-medium text-slate-700 mb-1">Name</label>
+          <input type="text" id="hire-name" name="name" required
+            class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-amber-600">
+        </div>
+        <div>
+          <label for="hire-email" class="block text-sm font-medium text-slate-700 mb-1">Email</label>
+          <input type="email" id="hire-email" name="email" required
+            class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-amber-600">
+        </div>
+        <div>
+          <label for="hire-message" class="block text-sm font-medium text-slate-700 mb-1">Message</label>
+          <textarea id="hire-message" name="message" rows="4" required
+            class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-amber-600"></textarea>
+        </div>
+        <button type="submit"
+          class="w-full px-5 py-2.5 rounded-lg bg-amber-600 text-white font-medium hover:bg-amber-700 transition-colors">
+          Submit
+        </button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-6 py-8 text-center text-sm text-slate-500">
+      <p>Software developer based in Mehsana, Gujarat, India.</p>
+      <p class="mt-2">© <span id="year"></span> Het Chaudhari. All rights reserved.</p>
+      <a href="#top" class="mt-2 inline-block text-amber-600 font-medium hover:underline">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.getElementById('hire-me-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('hire-name').value;
+      const email = document.getElementById('hire-email').value;
+      const message = document.getElementById('hire-message').value;
+      const subject = encodeURIComponent('Project inquiry from ' + name);
+      const body = encodeURIComponent(message + '\n\nFrom: ' + name + ' (' + email + ')');
+      window.location.href = 'mailto:hetc1639@gmail.com?subject=' + subject + '&body=' + body;
+    });
+  </script>
+</body>
+</html>
